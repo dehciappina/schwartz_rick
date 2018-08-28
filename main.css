@@ -1,12 +1,12 @@
 body {
     height:500vh;
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
     background:black;
 }
 
 body, h1, h2, h3, h4, h5, h6, p {
     margin:0;
+    font-weight: 100;
 }
 
 .main_section {
@@ -228,9 +228,146 @@ button:focus {
     height: 100vh;
 }
 
-.sec2 img {
-    width: 100%;
-    position: fixed;
-    top: 10vh;
-    filter: blur(9px);
+.sec2 h2 {
+    color: white;
+    text-align: center;
+    line-height: 20vh;
+    font-size: 3vw;
+}
+
+.post1 {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 670px) {
+
+    h1 {
+        font-size: 3vh;
+        width: 50%;
+    }
+
+    .main_section header nav {
+        width: 50%;
+        font-size: 2.2vh;
+    }
+
+    .main_section > article {
+        top:0;
+    }
+
+    .main_section > article > div {
+        background-repeat-y: repeat !important;
+    }
+
+    .rec1 {
+        right: 0;
+        bottom: 38.2vh;
+        background-size: cover;
+        background-position: inherit;
+    }
+
+        .rec1 aside h2 {
+            font-size: 6.5vh;
+        }
+
+        .rec1 aside p {
+            font-size: 2.1vh;
+        }
+
+        .rec1 aside button {
+            font-size: 3vh;
+            padding: 10px 13.7%;
+        }
+
+            .rec1 aside {
+                height: calc(100% - 10vh);
+            }
+
+    .rec2 {
+        top: 61.8%;
+        bottom: 0;
+        left: 38.2%;
+        background-size: 190%;
+        background-position: 50% bottom;
+    }
+
+        .rec2 aside h2 {
+            font-size: 4.5vh;
+        }
+
+        .rec2 aside p {
+            font-size: 2vh;
+        }
+
+        .rec2 aside button {
+            font-size: 3vh;
+            padding: 10px 13.7%;
+        }
+
+    .rec3 {
+        left: 0;
+        right: 61.8%;
+        bottom: 14.6%;
+        background-size: 70%;
+        background-position: left bottom;
+    }
+
+        .rec3 aside h2 {
+            font-size: 4vh;
+        }
+
+        .rec3 aside p {
+            font-size: 2.5vh;
+        }
+
+        .rec3 aside button {
+            font-size: 3vh;
+            padding: 10px 13.7%;
+        }
+
+    .rec4 {
+        left: 0;
+        right: 61.8%;
+        bottom: 0;
+        top: 85.4%;
+        background-size: 70%;
+        background-position: left bottom;
+    }
+
+    .rec_subtitle button:hover {
+        box-shadow: none !important;
+    }
+
+
+
+
+
+
+
+
 }
