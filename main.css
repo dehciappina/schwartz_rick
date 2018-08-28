@@ -360,6 +360,10 @@ button:focus {
         background-position: left bottom; */
     }
 
+        .rec4 aside h2 {
+            font-size: 3.5vh;
+        }
+
     .rec_subtitle button:hover {
         box-shadow: none !important;
     }
