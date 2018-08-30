@@ -22,7 +22,7 @@ body, h1, h2, h3, h4, h5, h6, p {
     background: black;
     z-index: 1;
     width: 100%;
-    box-shadow: 0 10px 70px;
+    box-shadow: inset 0 -0.5vh white, 0 10px 70px;
     height: 10vh;
     display: flex;
 }
@@ -49,7 +49,7 @@ h1 {
     text-align: center;
     color: white;
     font-weight: 100;
-    font-size: 3vw;
+    font-size: 2vw;
     width: 38.2%;
     cursor: default;
 }
@@ -225,7 +225,6 @@ button:focus {
 
 .sec2 {
     width: 100%;
-    height: 100vh;
 }
 
 .sec2 h2 {
@@ -235,15 +234,75 @@ button:focus {
     font-size: 3vw;
 }
 
-.post1 {
-
+.post1 aside {
+    background-image: url(assets/img06.jpg);
+}
+.post2 aside {
+    background-image: url(assets/img07.jpg);
+}
+.post3 aside {
+    background-image: url(assets/img08.jpg);
+}
+.post4 aside {
+    background-image: url(assets/img09.jpg);
 }
 
+.low_post {
+    height: 85vh;
+    display: flex;
+}
 
+.low_post:nth-child(odd) {
+    flex-direction: row-reverse;
+}
 
+.low_post:nth-child(even) {
+    
+}
 
+.low_post aside {
+    width: 50%;
+    height: 70vh;
+    background-attachment: fixed;
+    background-size: 60%;
+}
 
+    .low_post:nth-child(odd) aside {
+        background-position: right;
+    }
 
+    .low_post:nth-child(even) aside {
+        background-position: left;
+    }
+
+.low_post > div {
+    width: 50%;
+    padding: 0 6vw;
+    box-sizing: border-box;
+    color: white;
+    position: relative;
+}
+
+.low_post h3 {
+    font-size: 7vh;
+    margin-bottom: 5vh;
+}
+
+.low_post p {
+    font-size: 3vh;
+}
+
+.low_post button {
+    position: absolute;
+    bottom: 25%;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 4vh;
+    font-family: 'Roboto';
+    font-weight: 100;
+    cursor: pointer;
+}
 
 
 
@@ -324,6 +383,7 @@ button:focus {
 
         .rec2 aside p {
             font-size: 2vh;
+            display: none;
         }
 
         .rec2 aside button {
@@ -370,10 +430,34 @@ button:focus {
     }
 
 
+    .sec2 h2 {
+        font-size: 5vh;
+    }
 
 
+    .low_post {
+        display: block;
+        height:110vh;
+    }
 
+    .low_post aside {
+        width: 100%;
+        height: 40vh;
+        background-attachment: local;
+        background-size: 100%;
+    }
 
+    .low_post > div {
+        width: 100%;
+        text-align: center;
+        padding: 2vh 6vw;
+    }
 
+    .low_post button {
+        position: relative;
+        margin-top: 5vh;
+    }
+
+    
 
 }
