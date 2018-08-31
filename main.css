@@ -428,7 +428,7 @@ button:focus {
         }
 
     .rec_subtitle button:hover {
-        box-shadow: none !important;
+        outline: none !important;
     }
 
 
