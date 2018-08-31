@@ -437,7 +437,7 @@ button:focus {
 
     .low_post {
         display: block;
-        height:110vh;
+        height:auto;
     }
 
     .low_post aside {
@@ -450,7 +450,7 @@ button:focus {
     .low_post > div {
         width: 100%;
         text-align: center;
-        padding: 2vh 6vw;
+        padding: 10vh 6vw;
     }
 
     .low_post button {
