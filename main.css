@@ -32,12 +32,13 @@ body, h1, h2, h3, h4, h5, h6, p {
     width: 61.8%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     font-size: 1.5vw;
 }
 
 .main_section header nav p {
     cursor: pointer;
+    height: 100%;
+    line-height: 10vh;
 }
 
 .main_section header nav p:hover {
