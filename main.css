@@ -153,6 +153,8 @@ button:focus {
     top: 0;
     background-image: url(assets/img01.jpg);
     background-size: 100%;
+    
+    clip-path: polygon(0% 0%, 0% 90%, 100% 100%, 100% 0%);
 }
 
 
@@ -179,6 +181,8 @@ button:focus {
     background-size: 70%;
     background-position: 140% 20%;
     font-size: 3rem;
+    
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 10%);
 }
 
     .rec2 aside h2 {
@@ -203,6 +207,8 @@ button:focus {
     background-size: 50%;
     background-position: 100% 100%;
     font-size: 3rem;
+    
+    clip-path: polygon(0% 0%, 0% 100%, 100% 90%, 100% 0%);
 }
 
     .rec3 aside h2 {
@@ -336,6 +342,10 @@ button:focus {
     box-shadow: 0 0.4vh 0 white;
 }
 
+.touch_here {
+    opacity:0;
+    visibility: hidden;
+}
 
 
 
@@ -410,6 +420,7 @@ button:focus {
     .rec1 {
         right: 0;
         bottom: 38.2vh;
+        clip-path:none;
         /* background-size: cover; */
         /* background-position: inherit; */
     }
@@ -436,6 +447,7 @@ button:focus {
         bottom: 0;
         left: 38.2%;
         background-position: center;
+        clip-path:none;
         /* background-size: 190%; */
         /* background-position: 50% bottom; */
     }
@@ -458,6 +470,7 @@ button:focus {
         left: 0;
         right: 61.8%;
         bottom: 14.6%;
+        clip-path:none;
         /* background-size: 100%;
         background-position: left bottom; */
     }
@@ -552,7 +565,7 @@ button:focus {
         right: 5%;
         align-items: center;
         cursor: pointer;
-        height: 60%;
+        height: 40%;
     }
 
     .hamburguer div {
@@ -592,6 +605,36 @@ button:focus {
             bottom: 50%;
             transform: translateY(25%) rotate(-45deg);
             width: 50% !important;
+        }
+
+        .touch_here {
+            opacity: 1;
+            visibility: visible;
+            width: 7vh;
+            height: 7vh;
+            position: absolute;
+            right: 10%;
+            bottom: 10%;
+            border-radius: 50%;
+            animation: touch_here_anim 3s linear infinite;
+        }
+
+        @keyframes touch_here_anim {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255,255,255,0.8), 0 0 0 0 rgba(255,255,255,0.8);
+            }
+
+            40% {
+                box-shadow:0 0 0 2vh rgba(255,255,255,0.4), 0 0 0 0 rgba(255,255,255,1);
+            }
+
+            80% {
+                box-shadow: 0 0 0 4vh rgba(255,255,255,0), 0 0 0 3vh rgba(255,255,255,0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 4vh rgba(255,255,255,0), 0 0 0 3vh rgba(255,255,255,0);
+            }
         }
 
 }
