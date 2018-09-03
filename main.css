@@ -550,6 +550,7 @@ button:focus {
         right: 5%;
         align-items: center;
         cursor: pointer;
+        height: 60%;
     }
 
     .hamburguer div {
