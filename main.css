@@ -9,6 +9,11 @@ body, h1, h2, h3, h4, h5, h6, p {
     font-weight: 100;
 }
 
+.hamburguer {
+    visibility: hidden;
+    opacity: 0;
+}
+
 .main_section {
     width: 100%;
     height: 100vh;
@@ -25,6 +30,12 @@ body, h1, h2, h3, h4, h5, h6, p {
     box-shadow: inset 0 -0.5vh white, 0 10px 70px;
     height: 10vh;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_section header > img {
+    height:100%;
 }
 
 .main_section header nav {
@@ -345,13 +356,39 @@ button:focus {
 @media screen and (max-width: 670px) {
 
     h1 {
-        font-size: 3vh;
-        width: 50%;
+        font-size: 3.5vh;
+        width: 100%;
+        position: absolute;
     }
 
     .main_section header nav {
-        width: 50%;
-        font-size: 2.2vh;
+        width: 38.2%;
+        height: 35vh;
+        font-size: 4.5vh;
+        flex-direction: column;
+        visibility: hidden;
+        opacity: 0;
+        transform:translateX(100%);
+        top: 10vh;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background: rgba(255,255,255,0.7);
+        text-align: right;
+        border-radius: 0 0 0 10px;
+        transition: 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+
+    .main_section_header_nav_APPEAR {
+        transform:translateX(0%) !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    .main_section header nav p {
+        width: 75%;
+        color: black;
+        font-weight: 400;
     }
 
     .main_section > article {
@@ -499,5 +536,52 @@ button:focus {
     }
 
     
+    .hamburguer {
+        visibility: visible;
+        opacity: 1;
+        width: 13%;
+        position: absolute;
+        height: 40%;
+        right: 0;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .hamburguer div {
+        width: 60%;
+        height: 13%;
+        background: white;
+        position: absolute;
+        transition: 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+
+    .hamburguer_1 {
+        top: 0;
+    }
+
+    .hamburguer_2 {
+        top: 50%;
+        transform:translateY(-50%);
+    }
+
+    .hamburguer_3 {
+        bottom:0;
+    }
+
+        .hamburguer_1X {
+            transform: rotate(45deg) !important;
+            top: 50% !important;
+        }
+
+        .hamburguer_2X {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+
+        .hamburguer_3X {
+            bottom: 49%;
+            transform: rotate(-45deg) !important;
+        }
 
 }
