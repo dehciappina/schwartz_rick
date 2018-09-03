@@ -49,10 +49,12 @@ body, h1, h2, h3, h4, h5, h6, p {
 
 .main_section header nav p {
     cursor: pointer;
+    transition:1s ease;
 }
 
 .main_section header nav p:hover {
-    color:grey;
+    color:darkgrey;
+    transition:0s;
 }
 
 h1 {
@@ -274,7 +276,7 @@ button:focus {
 }
 
 .low_post aside {
-    width: 50%;
+    width: 62%;
     height: 100%;
     background-attachment: fixed;
     background-size: 70%;
@@ -377,7 +379,7 @@ button:focus {
         position: absolute;
         right: 0;
         bottom: 0;
-        background: linear-gradient(90deg, rgba(255,255,255,0.5), rgba(255,255,255,1));
+        background: linear-gradient(70deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.9) 60%);
         text-align: right;
         transition: 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
     }
