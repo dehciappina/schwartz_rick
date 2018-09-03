@@ -353,7 +353,7 @@ button:focus {
 
 
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 175vh) {
 
     h1 {
         font-size: 3.5vh;
