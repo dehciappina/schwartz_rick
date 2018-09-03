@@ -385,9 +385,13 @@ button:focus {
     }
 
     .main_section header nav p {
-        width: 75%;
+        width: 100%;
+        padding: 2% 20% 2% 0;
         color: black;
         font-weight: 400;
+        box-sizing: border-box;
+        transition: 0.5s ease;
+        background: rgba(255,255,255,0.6);
     }
 
     .main_section > article {
