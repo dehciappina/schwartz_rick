@@ -363,19 +363,18 @@ button:focus {
 
     .main_section header nav {
         width: 38.2%;
-        height: 35vh;
+        height: 51.8vh;
         font-size: 4.5vh;
         flex-direction: column;
         visibility: hidden;
         opacity: 0;
-        transform:translateX(100%);
+        transform: translateX(100%);
         top: 10vh;
         position: absolute;
         right: 0;
         bottom: 0;
-        background: rgba(255,255,255,0.7);
+        background: linear-gradient(90deg, rgba(255,255,255,0.5), rgba(255,255,255,1));
         text-align: right;
-        border-radius: 0 0 0 10px;
         transition: 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
     }
 
