@@ -83,6 +83,7 @@ h1 {
     cursor: default;
     display: flex;
     align-items: flex-end;
+    background-color: grey;
 }
 
 
@@ -289,6 +290,7 @@ button:focus {
     background-size: 70%;
     box-shadow: 0 -2vh #0A0A0A, 0 2vh #0A0A0A;
     transition:0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    background-color: grey;
 }
 
 .low_post aside:hover {
