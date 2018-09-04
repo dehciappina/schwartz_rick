@@ -381,22 +381,22 @@ button:focus {
     }
 
     .main_section header nav {
-        width: 100%;
-        height: 90vh;
-        font-size: 4.5vh;
-        flex-direction: column;
-        visibility: hidden;
-        opacity: 0;
-        transform: translateX(100%);
-        top: 10vh;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(90deg, rgba(255,255,255,0) 0, rgba(255,255,255,0.9) 60%);
-        text-align: right;
-        transition: 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    width: 61.8%;
+    height: 90vh;
+    font-size: 4.5vh;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(100%);
+    top: 10vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(70deg, rgba(255,255,255,0.5), rgba(255,255,255,1));
+    text-align: right;
+    transition: 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
     }
-
+    
     .main_section_header_nav_APPEAR {
         transform:translateX(0%) !important;
         visibility: visible !important;
